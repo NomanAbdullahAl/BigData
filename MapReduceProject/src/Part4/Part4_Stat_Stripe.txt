@@ -1,6 +1,6 @@
-   File System Counters
-                FILE: Number of bytes read=10817694
-                FILE: Number of bytes written=22188729
+ File System Counters
+                FILE: Number of bytes read=5394471
+                FILE: Number of bytes written=11342287
                 FILE: Number of read operations=0
                 FILE: Number of large read operations=0
                 FILE: Number of write operations=0
@@ -13,40 +13,40 @@
         Job Counters
                 Launched map tasks=1
                 Launched reduce tasks=1
-                Rack-local map tasks=1
-                Total time spent by all maps in occupied slots (ms)=3589
-                Total time spent by all reduces in occupied slots (ms)=3445
-                Total time spent by all map tasks (ms)=3589
-                Total time spent by all reduce tasks (ms)=3445
-                Total vcore-milliseconds taken by all map tasks=3589
-                Total vcore-milliseconds taken by all reduce tasks=3445
-                Total megabyte-milliseconds taken by all map tasks=3675136
-                Total megabyte-milliseconds taken by all reduce tasks=3527680
+                Data-local map tasks=1
+                Total time spent by all maps in occupied slots (ms)=2604
+                Total time spent by all reduces in occupied slots (ms)=3196
+                Total time spent by all map tasks (ms)=2604
+                Total time spent by all reduce tasks (ms)=3196
+                Total vcore-milliseconds taken by all map tasks=2604
+                Total vcore-milliseconds taken by all reduce tasks=3196
+                Total megabyte-milliseconds taken by all map tasks=2666496
+                Total megabyte-milliseconds taken by all reduce tasks=3272704
         Map-Reduce Framework
                 Map input records=1000
-                Map output records=515128
-                Map output bytes=9787432
-                Map output materialized bytes=10817694
+                Map output records=29759
+                Map output bytes=5310601
+                Map output materialized bytes=5394471
                 Input split bytes=105
                 Combine input records=0
                 Combine output records=0
                 Reduce input groups=540
-                Reduce shuffle bytes=10817694
-                Reduce input records=515128
+                Reduce shuffle bytes=5394471
+                Reduce input records=29759
                 Reduce output records=540
-                Spilled Records=1030256
+                Spilled Records=59518
                 Shuffled Maps =1
                 Failed Shuffles=0
                 Merged Map outputs=1
-                GC time elapsed (ms)=102
-                CPU time spent (ms)=2624
-                Physical memory (bytes) snapshot=879968256
-                Virtual memory (bytes) snapshot=1267937280
-                Total committed heap usage (bytes)=758120448
-                Peak Map Physical memory (bytes)=520228864
-                Peak Map Virtual memory (bytes)=679608320
-                Peak Reduce Physical memory (bytes)=359739392
-                Peak Reduce Virtual memory (bytes)=588398592
+                GC time elapsed (ms)=94
+                CPU time spent (ms)=1921
+                Physical memory (bytes) snapshot=809451520
+                Virtual memory (bytes) snapshot=1263116288
+                Total committed heap usage (bytes)=727187456
+                Peak Map Physical memory (bytes)=444411904
+                Peak Map Virtual memory (bytes)=671989760
+                Peak Reduce Physical memory (bytes)=365039616
+                Peak Reduce Virtual memory (bytes)=591204352
         Shuffle Errors
                 BAD_ID=0
                 CONNECTION=0
@@ -57,3 +57,4 @@
         File Input Format Counters
                 Bytes Read=124034
         File Output Format Counters
+                Bytes Written=4316598

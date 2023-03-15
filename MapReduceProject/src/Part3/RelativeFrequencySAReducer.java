@@ -12,39 +12,31 @@ import java.util.Map;
 import java.util.StringJoiner;
 
 public class RelativeFrequencySAReducer extends Reducer<Text, MapWritable, Text, Text> {
-
-    private int count;
-    private Map<String,Integer> map;
-
-    @Override
-    protected void setup(Reducer<Text, MapWritable, Text, Text>.Context context) throws IOException, InterruptedException {
-        super.setup(context);
-        count = 0;
-        map = new HashMap<>();
-    }
-    private void cleanUp(){
-        count = 0;
-        map.clear();
+    private final Map<String,Integer> _m = new HashMap<>();
+    private Map<String,Integer> getMap(){
+        _m.clear();
+        return _m;
     }
     @Override
     public void reduce(Text key, Iterable<MapWritable> values, Context context) throws IOException, InterruptedException
     {
-        this.cleanUp();
+        Map<String,Integer> map = this.getMap();
+        int count = 0;
         for (MapWritable mapWritable: values) {
             for (Map.Entry<Writable, Writable> entry: mapWritable.entrySet()) {
                 String entryKey = entry.getKey().toString();
                 int entryValue = ((IntWritable)entry.getValue()).get();
+                count+=entryValue;
                 if (map.containsKey(entryKey)) {
                     entryValue += map.get(entryKey);
                 }
                 map.put(entryKey, entryValue);
             }
-            count += mapWritable.size();
         }
-        context.write(key, new Text(getOutput(map)));
+        context.write(key, new Text(getOutput(map,count)));
     }
 
-    private String getOutput(Map<String,Integer> map){
+    private String getOutput(Map<String,Integer> map, int count){
         StringJoiner result = new StringJoiner(", ", "[", "]");
         map.keySet().forEach(aKey->{
             result.add(String.format("(%s , %f)", aKey, (double) map.get(aKey)/count));
