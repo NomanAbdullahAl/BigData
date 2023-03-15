@@ -1,0 +1,24 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MapReduceProject:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MapReduceProject_jar</output-path>
+    <root id="archive" name="MapReduceProject.jar">
+      <element id="module-output" name="MapReduceProject" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../hadoop-3.3.4/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../hadoop-3.3.4/share/hadoop/mapreduce/hadoop-mapreduce-client-uploader-3.3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../hadoop-3.3.4/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-3.3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../hadoop-3.3.4/share/hadoop/mapreduce/hadoop-mapreduce-client-nativetask-3.3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../hadoop-3.3.4/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../hadoop-3.3.4/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.3.4-tests.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../hadoop-3.3.4/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-3.3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../hadoop-3.3.4/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-3.3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../hadoop-3.3.4/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../hadoop-3.3.4/share/hadoop/mapreduce/hadoop-mapreduce-client-common-3.3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../hadoop-3.3.4/share/hadoop/mapreduce/hadoop-mapreduce-client-app-3.3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../hadoop-3.3.4/share/hadoop/common/hadoop-registry-3.3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../hadoop-3.3.4/share/hadoop/common/hadoop-nfs-3.3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../hadoop-3.3.4/share/hadoop/common/hadoop-kms-3.3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../hadoop-3.3.4/share/hadoop/common/hadoop-common-3.3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../hadoop-3.3.4/share/hadoop/common/hadoop-common-3.3.4-tests.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
